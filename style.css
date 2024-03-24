@@ -1,0 +1,156 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: white; /* Add a background color to the header */
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h4 {
+    margin: 0;
+}
+
+.right-bx ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.right-bx ul li {
+    display: inline;
+    margin-left: 20px; /* Add margin between list items */
+}
+
+.right-bx ul li:first-child {
+    margin-left: 0; /* Remove margin for the first list item */
+}
+
+.account-bx {
+    display: flex;
+    align-items: center;
+}
+
+.account-bx .bi {
+    margin-left: 20px; /* Add margin between account icons */
+    color: grey;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.content {
+    margin-top: 60px;
+    padding: 10px;
+    background-image: url(./images/rental2.jpg);
+    background-size: cover; /* Ensure the background image covers the entire content area */
+    background-position: center;
+    height: 100vh; /* Set height to 100% of the viewport height */
+}
+
+.cont-bx {
+    width: 500px;
+    height: auto;
+    color: black;
+    padding: 50px;
+}
+
+.cont-bx h1 {
+    font-size: 30px; /* Changed from 3px */
+    line-height: 50px;
+    font-weight: 600; /* Changed from 600px */
+}
+
+.cont-bx p {
+    font-size: 20px; /* Increased font size */
+    font-weight: 700; /* Increased font weight */
+    color: black; /* Changed from rgb(100, 100, 300) */
+    margin-top: 30px;
+}
+
+.weather {
+    margin-top: 80px;
+}
+
+.weather h6 {
+    color: black; /* Changed from rgb(100, 100, 300) */
+    font-size: 20px; /* Changed from 10px */
+    font-weight: 800; /* Increased font weight */
+}
+
+.weather h6 span {
+    margin-left: 5px;
+}
+
+.btns-cont { /* Corrected class name */
+    margin-top: 10px;
+}
+
+.btns-cont i {
+    border: 1px solid gray;
+    padding: 5px 10px; /* Adjusted padding */
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Corrected transition property */
+    color: black; /* Added color property */
+}
+
+.btns-cont i:hover { /* Corrected hover selector */
+    color: black;
+    background: rgb(0, 0, 0); /* Changed from rgb(0,0, -1) */
+}
+
+.images-bx {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    border: 1px solid black;
+    width: 50px;
+}
+
+.images-bx .card {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    background: rgba(237, 237, 237, 0.3); /* Changed from rgb */
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.images-bx .card img { /* Corrected class name */
+    width: 100%;
+    height: 100%; /* Adjusted height */
+    border-radius: 8px;
+}
+
+.images-bx .card h6 {
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    font-size: 18px; /* Increased font size */
+    font-weight: 800; /* Increased font weight */
+    color: white;
+}
